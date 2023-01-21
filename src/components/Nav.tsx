@@ -41,7 +41,7 @@ export function Nav() {
           </div>
           <div className="w-10/12 text-center md:text-right">
             <ul
-              className={`md:space-x-10 text-secondary transition-all absolute top-20 left-0 right-0 md:static bg-primary ${
+              className={`md:space-x-10 text-secondary transition-all absolute top-20 right-0 md:static bg-primary ${
                 open ? "left-0" : "left-full"
               }`}
             >
@@ -62,10 +62,10 @@ export function Nav() {
           <button onClick={() => setOpen(!open)} className="md:hidden z-20">
             <svg
               viewBox="0 0 24 24"
-              width="24"
-              height="24"
-              stroke="currentColor"
-              stroke-width="2"
+              width="30"
+              height="30"
+              stroke="#45577B"
+              stroke-width="2.5"
               fill="none"
               stroke-linecap="round"
               stroke-linejoin="round"
