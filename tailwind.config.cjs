@@ -8,14 +8,16 @@ module.exports = {
       lg: "1024px",
       xl: "1080px",
     },
-    colors: {
-      primary: "#F2F2F2",
-      secondary: "#45577B",
-    },
     fontFamily: {
       title: ["Outfit", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#F2F2F2",
+        secondary: "#45577B",
+        tertiary: "#46434E",
+      },
+    },
   },
   plugins: [],
 };
