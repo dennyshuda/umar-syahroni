@@ -2,7 +2,7 @@ import illustration from "../assets/illustration.svg";
 
 export function About() {
   return (
-    <div className="bg-tertiary text-white rounded-2xl">
+    <div id="about" className="bg-tertiary text-white rounded-2xl">
       <div className="flex md:items-center flex-col md:flex-row gap-5">
         <div className=" md:w-6/12">
           <img className="p-7" src={illustration} alt="illustration" />
