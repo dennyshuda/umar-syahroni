@@ -1,6 +1,9 @@
+import { useState } from "react";
 import { Container } from "./Container";
 
 export function Nav() {
+  const [open, setOpen] = useState(false);
+
   const navLink = [
     {
       text: "Home",
@@ -36,17 +39,42 @@ export function Nav() {
               />
             </svg>
           </div>
-          <div className="w-10/12 text-right">
-            <ul className="space-x-10 text-secondary">
+          <div className="w-10/12 text-center md:text-right">
+            <ul
+              className={`md:space-x-10 text-secondary transition-all absolute top-20 left-0 right-0 md:static bg-primary ${
+                open ? "left-0" : "left-full"
+              }`}
+            >
               {navLink.map((item) => {
                 return (
                   <>
-                    <a href={item.href}>{item.text}</a>
+                    <a
+                      className="block py-5 md:py-0 md:inline-block"
+                      href={item.href}
+                    >
+                      {item.text}
+                    </a>
                   </>
                 );
               })}
             </ul>
           </div>
+          <button onClick={() => setOpen(!open)} className="md:hidden z-20">
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              stroke="currentColor"
+              stroke-width="2"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
         </div>
       </Container>
     </nav>
