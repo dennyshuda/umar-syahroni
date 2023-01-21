@@ -6,15 +6,18 @@ export function Nav() {
 
   const navLink = [
     {
+      id: 1,
       text: "Home",
       href: "/",
     },
 
     {
+      id: 2,
       text: "About",
       href: "#about",
     },
     {
+      id: 3,
       text: "Projects",
       href: "#projects",
     },
@@ -49,14 +52,14 @@ export function Nav() {
             >
               {navLink.map((item) => {
                 return (
-                  <>
+                  <li className="inline" key={item.id}>
                     <a
                       className="block py-5 md:py-0 md:inline-block"
                       href={item.href}
                     >
                       {item.text}
                     </a>
-                  </>
+                  </li>
                 );
               })}
             </ul>
@@ -69,10 +72,10 @@ export function Nav() {
                 width="30"
                 height="30"
                 stroke="#45577B"
-                stroke-width="2.5"
+                strokeWidth="2.5"
                 fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 <line x1="18" y1="6" x2="6" y2="18"></line>
                 <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -85,10 +88,10 @@ export function Nav() {
                 width="30"
                 height="30"
                 stroke="#45577B"
-                stroke-width="2.5"
+                strokeWidth="2.5"
                 fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 <line x1="3" y1="12" x2="21" y2="12"></line>
                 <line x1="3" y1="6" x2="21" y2="6"></line>
