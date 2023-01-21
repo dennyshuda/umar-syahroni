@@ -1,7 +1,16 @@
+import { Container } from "./components/Container";
+import { Header } from "./components/Header";
+import { Nav } from "./components/Nav";
+
 function App() {
   return (
     <div className="App">
-      <h1 className="text-3xl font-bold underline">Umar Syahroni</h1>
+      <div className="bg-primary">
+        <Container>
+          <Nav />
+          <Header />
+        </Container>
+      </div>
     </div>
   );
 }
