@@ -21,7 +21,7 @@ export function Nav() {
   ];
 
   return (
-    <nav className="py-10 fixed left-0 top-0 w-full">
+    <nav className="py-10 fixed left-0 top-0 w-full bg-primary">
       <Container>
         <div className="flex items-center">
           <div className="w-2/12">
