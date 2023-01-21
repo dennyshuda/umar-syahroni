@@ -1,17 +1,15 @@
-import { Container } from "./Container";
-
 export function Header() {
   return (
     <div>
-      <div className=" h-screen flex flex-col items-center justify-center gap-5">
-        <div className="w-10/12 text-center text-8xl text-secondary font-title font-bold">
+      <div className="h-screen flex flex-col items-center justify-center gap-5">
+        <div className="w-full mt-28 md:w-10/12 text-center text-5xl md:text-7xl xl:text-8xl text-secondary font-title font-bold">
           <h1>Umar Syahroni</h1>
         </div>
         <div className="w-3/12 bg-[#ED7D31] h-2 my-4"></div>
-        <div className="w-9/12 text-center text-2xl font-bold text-secondary">
+        <div className="md:w-9/12 text-center text-2xl font-bold text-secondary">
           <h3>Designer and Ilustrator, based in Surabaya, Indonesia.</h3>
         </div>
-        <div className="w-8/12 text-center opacity-70">
+        <div className="md:w-8/12 text-center opacity-70">
           <p>
             I am a “half-blood” Designer and Illustrator who has experience
             creating many projects in a various industry. In other words, I
